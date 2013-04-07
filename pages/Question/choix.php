@@ -1,5 +1,7 @@
 <?php
 entete('Reponse');
+?>
+<?php
 
 $repeat=0;
 $question=addslashes($_POST['question']);
@@ -84,5 +86,7 @@ else
      };
      
 mysql_close($link);
+?>
+<?php
 basdepage();
 ?>

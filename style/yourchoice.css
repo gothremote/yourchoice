@@ -6,15 +6,17 @@
     font-family: 'American Captain';
     src: url('American Captain.ttf') format('truetype');
 }
+/* Définition de la couleur de fond */
 body {
 background-color : #FEA41E;
+padding : 0px 5px 5px 5px;
 }
 /* Definition du bloc d'entête (hauteur et largeur)
  * position relative pour pouvoir aligner les image par la suite*/
 .header {
 position : relative;
 display: inline-block;
-height : 150px;
+height : 130px;
 width : 100%;
 }
 /* Définition de la police de titre
@@ -28,18 +30,19 @@ font-family : 'American Captain', Impact, "Arial Black", Arial, Verdana, sans-se
 }
 /* Image ne dépassant pas de leur "bloc" avec height : 100%*/
 img {
-display : inline-block;
 height: 100%;
 }
-/* Alignement de l'image a gauche par rapport au "bloc" header grace à position absolue*/
+/* Alignement de l'image a gauche en bas par rapport au "bloc" header grace à position absolue*/
 .gauche {
 position : absolute;
 left : 0px;
+bottom : 0px;
 }
-/* Alignement de l'image a droite par rapport au "bloc" header grace à position absolue*/
+/* Alignement de l'image a droite en bas par rapport au "bloc" header grace à position absolue*/
 .droite {
 position : absolute;
 right : 0px;
+bottom : 0px;
 }
 /* Définition du bloc menu (arriere plan et bord rond)
  * Définition de sa largeur + espacement par rapport au texte en dessous*/
@@ -48,7 +51,7 @@ display : inline-block;
 background-color: #1A1D1D;
 border-radius: 5px;
 width:100%;
-margin-bottom : 20px;
+margin-bottom : 10px;
 }
 /* Définition de la police du menu(taille, gras, police)
  * Suppression des puces + espacement à droite*/
@@ -69,6 +72,62 @@ text-decoration : none;
 .menu li a:hover {
 color : #01B0F0;
 text-decoration : none;
+}
+/* Definition du bloc de corp (hauteur min fixe)
+ * Inclusion d'une marge intérieure + bord rond + couleur spéciale
+ * Obligation d'utiliser box-sizing pour pas que ca dépasse*/
+.corp {
+display : inline-block;
+width : 100%;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+background-color : #FEC158;
+border-radius : 5px;
+min-height : 250px;
+padding : 15px;
+}
+/* Definition du bloc de bas de page (hauteur min fixe)
+ * Inclusion d'une marge intérieure + bord rond + couleur spéciale + marge en haut
+ * Obligation d'utiliser box-sizing pour pas que ca dépasse*/
+#footer {
+position : relative;
+display : inline-block;
+width : 100%;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+background-color : #FEC158;
+border-radius : 5px;
+min-height : 50px;
+padding : 15px;
+margin-top : 10px;
+}
+/* Definition du bas de page */
+#footer p {
+display :inline-block;
+margin-right : 5%;
+margin-left : 5%;
+}
+/* Definition espacement de chaque ligne du tableau */
+#tableau tr {
+display : inline-block;
+margin: 10px;
+}
+/* Definition espacement à droite de chaque case du tableau */
+#tableau td {
+display : inline-block;
+margin-right : 70px;
+}
+/* Mise en valeur du champ question
+ * Centrage, changement police and co */
+.question {
+margin-left : 10px;
+text-align : center;
+font-size : 2em;
+font-height : bold;
+text-transform: uppercase;
+font-family : 'American Captain', Impact, "Arial Black", Arial, Verdana, sans-serif;
 }
 
 

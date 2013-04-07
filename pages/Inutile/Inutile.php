@@ -1,3 +1,9 @@
-<html><body>mouarf
-</body>
-</html>
+<?php 
+entete('Question Inutile');
+?>
+
+mouarf
+
+<?php 
+basdepage();
+?>

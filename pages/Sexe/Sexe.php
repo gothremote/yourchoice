@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8"/>
-</head>
-<body>
+<?php 
+entete('Question Hot');
+?>
 
 Choisis ton type de questions : <br> <br>
 
-<form action="Qsex2.php" method="POST">
+<form action="Sexe/Qsex2" method="POST">
 
 
 <input type="radio" name="choix" value="choix1">
@@ -25,6 +22,7 @@ Choisis ton type de questions : <br> <br>
 
 <input type="submit" value="choix" >
 
-</body>
-</html>
+<?php 
+basdepage();
+?>
 

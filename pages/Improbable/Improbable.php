@@ -1,3 +1,9 @@
-<html><body>pouti
-</body>
-</html>
+<?php 
+entete('Question Improbable');
+?>
+
+Coucou
+
+<?php 
+basdepage();
+?>

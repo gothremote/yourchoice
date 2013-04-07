@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8"/>
-</head>
-<body>
-<?php
+<?php 
+entete('Question Houlaop');
 $choix=$_POST['choix'];
 ?>
+
 Bonjour
-</body>
-</html>
+
+<?php 
+basdepage();
+?>

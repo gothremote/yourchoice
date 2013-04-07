@@ -1,3 +1,9 @@
-<html><body>Niarf
-</body>
-</html>
+<?php 
+entete('Question Favorite');
+?>
+
+blabla
+
+<?php 
+basdepage();
+?>

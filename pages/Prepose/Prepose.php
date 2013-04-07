@@ -1,3 +1,10 @@
-<html><body>Bonjour
-</body>
-</html>
+<?php 
+entete('Question Préposée');
+?>
+
+Bonjour
+
+<?php 
+basdepage();
+?>
+
