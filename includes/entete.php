@@ -13,11 +13,11 @@
 </div>
 <div class="menu">
 <ul>
+<li><a href="/yourchoice" > Acceuil </a></li>
+<li><a href="Question" > Poses-ta question </a></li>
 <li><a href="Prepose" >Questions préposées </a> </li>
 <li><a href="Inutile" >Questions inutiles </a></li>
 <li><a href="Improbable" >Questions improbables </a></li>
 <li><a href="Sexe" >Questions sexuelles</a></li>
-<li><a href="Question" > Poses-ta question </a></li>
-<li><a href="Favorite" > Question favorite </a></li>
 </ul>
 </div>

@@ -1,37 +1,58 @@
+@font-face { /* Définition d'une nouvelle police nommée ChemyRetro_v01 */
+    font-family: 'ChemyRetro_v01';
+    src: url('ChemyRetro_v01.ttf') format('truetype');
+}
+@font-face { /* Définition d'une nouvelle police nommée American Captain */
+    font-family: 'American Captain';
+    src: url('American Captain.ttf') format('truetype');
+}
 body {
 background-color : #FEA41E;
 }
+/* Definition du bloc d'entête (hauteur et largeur)
+ * position relative pour pouvoir aligner les image par la suite*/
 .header {
 position : relative;
 display: inline-block;
 height : 150px;
 width : 100%;
 }
+/* Définition de la police de titre
+ * Transformation du texte en majuscule, gras et alignement au centre*/
 .header h1{
 text-align : center;
+font-size : 4em;
 font-height : bold;
 text-transform: uppercase;
-font-family : Impact, "Arial Black", Arial, Verdana, sans-serif;
+font-family : 'American Captain', Impact, "Arial Black", Arial, Verdana, sans-serif;
 }
+/* Image ne dépassant pas de leur "bloc" avec height : 100%*/
 img {
 display : inline-block;
 height: 100%;
 }
+/* Alignement de l'image a gauche par rapport au "bloc" header grace à position absolue*/
 .gauche {
 position : absolute;
 left : 0px;
 }
+/* Alignement de l'image a droite par rapport au "bloc" header grace à position absolue*/
 .droite {
 position : absolute;
 right : 0px;
 }
+/* Définition du bloc menu (arriere plan et bord rond)
+ * Définition de sa largeur + espacement par rapport au texte en dessous*/
 .menu {
 display : inline-block;
 background-color: #1A1D1D;
 border-radius: 5px;
 width:100%;
+margin-bottom : 20px;
 }
-li {
+/* Définition de la police du menu(taille, gras, police)
+ * Suppression des puces + espacement à droite*/
+.menu li {
 display : inline-block;
 list-style : none;
 margin-right : 2%;
@@ -39,34 +60,16 @@ font-family : fantasy;
 font-size : 2 em;
 font-weight : bold;
 }
-li a {
-color : #F600DD;
+/* Suppression des soulignée + couleur des lien*/
+.menu li a {
+color : #2832BC;
 text-decoration : none;
 }
-li a:hover {
-color : #B0009F;
+/* Suppression des soulignée + couleur des lien "hover"*/
+.menu li a:hover {
+color : #01B0F0;
 text-decoration : none;
-}
-.bouton a
-{
-display:block;
-width:140px;
-height:60px;
-text-align:center;
-vertical-align:middle;
-background:url('../images/penis2.jpegs') no-repeat;
-opacity: 0.6;
-filter(opacity=60);
-color:black;
-text-decoration:none;
-font-weight:bold;
-border:1px solid black;
 }
 
-.bouton a:hover {
-background:url('../images/nichons2.jpeg') no-repeat;
-opacity: 0.6;
-filter(opacity=60);
-}
 
 

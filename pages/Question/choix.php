@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8"/>
-</head>
-<body>
 <?php
+entete('Reponse');
 
 $repeat=0;
 $question=addslashes($_POST['question']);
@@ -87,14 +82,7 @@ else
 		} ;
 	};
      };
-
-
-
-
-
-
-
+     
 mysql_close($link);
+basdepage();
 ?>
-</body>
-</html>
