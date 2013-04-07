@@ -1,3 +1,6 @@
+<?php 
+entete('404 Not Found');
+?>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -10,3 +13,6 @@
 </div>
 </body>
 </html>
+<?php 
+basdepage();
+?>

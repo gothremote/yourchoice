@@ -1,9 +1,6 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<LINK rel="stylesheet" type="text/css" href="style/yourchoice.css">
-</head>
-<body>
+<?php 
+entete("Accueil");
+?>
 <div class="background">
 <center>Bonjour, bienvenue sur le meilleur site de l'Oise !
 <p>
@@ -20,5 +17,6 @@ MENU
 <div class="bouton"> <a href="Favorite" > Question favorite </a></div>
 
 </div>
-</body>
-</html>
+<?php 
+basdepage();
+?>

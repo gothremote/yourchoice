@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8"/>
-</head>
-<body>
+<?php 
+entete('Pose ta question');
+?>
 <form action="choix.php" method="POST">
 <label for="question">Question : </label><input type="text" id="question" name="question"><br><br>
 
@@ -15,5 +12,6 @@
 <label for="choix6">Choix 6 : </label><input type="text" id="choix6" name="choix6"><br><br>
 
 <input type="submit" value="décision" >
-</body>
-</html>
+<?php 
+basdepage();
+?>
