@@ -5,7 +5,7 @@ width:140px;
 height:60px;
 text-align:center;
 vertical-align:middle;
-background:url(penis2.jpeg) no-repeat;
+background:url(images/penis2.jpeg) no-repeat;
 opacity: 0.6;
 filter(opacity=60);
 color:black;
@@ -15,7 +15,7 @@ border:1px solid black;
 }
 
 .bouton a:hover {
-background:url(nichons2.jpeg) no-repeat;
+background:url(/images/nichons2.jpeg) no-repeat;
 opacity: 0.6;
 filter(opacity=60);
 }
