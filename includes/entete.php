@@ -14,7 +14,7 @@
 	</div>
 	<div class="menu">
 		<ul>
-		<li><a href="/yourchoice" > Acceuil </a></li>
+		<li><a href="/yourchoice" > Accueil </a></li>
 		<li><a href="/yourchoice/Question" > Poses-ta question </a></li>
 		<li><a href="/yourchoice/Prepose" >Questions préposées </a> </li>
 		<li><a href="/yourchoice/Inutile" >Questions inutiles </a></li>
@@ -22,4 +22,4 @@
 		<li><a href="/yourchoice/Sexe" >Questions sexuelles</a></li>
 	</ul>
 	</div>
-	<div class="corp">
+	<!-- <div class="corp"> -->

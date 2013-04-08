@@ -1,4 +1,4 @@
-    </div>
+    <!-- </div> -->
     <div id="footer">
         <img class="gauche" src="/yourchoice/images/pointintrenverse.png">
         <p>Ceci n'est pas un message de pub qui vise à te faire aller sur des 

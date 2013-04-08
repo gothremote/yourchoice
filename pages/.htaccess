@@ -1,0 +1,3 @@
+ErrorDocument 403 /yourchoice/403.php 
+
+Deny from all 
