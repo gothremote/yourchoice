@@ -26,6 +26,7 @@ text-align : center;
 font-size : 4em;
 font-height : bold;
 text-transform: uppercase;
+color : white;
 font-family : 'American Captain', Impact, "Arial Black", Arial, Verdana, sans-serif;
 text-shadow: 1px 1px 2px black;
 }
@@ -59,19 +60,22 @@ margin-bottom : 10px;
 .menu li {
 display : inline-block;
 list-style : none;
-margin-right : 2%;
 font-family : fantasy;
 font-size : 2 em;
 font-weight : bold;
 }
 /* Suppression des soulignée + couleur des lien*/
 .menu li a {
-color : #2832BC;
+padding: .6em 1.1em;
+color : white;
+background-color : #999A9A;
 text-decoration : none;
+border-radius : 5px;
 }
 /* Suppression des soulignée + couleur des lien "hover"*/
 .menu li a:hover {
-color : #01B0F0;
+color : white;
+background-color : #cccccc;
 text-decoration : none;
 }
 /* Definition du bloc de corp (hauteur min fixe)
@@ -131,19 +135,92 @@ font-height : bold;
 text-transform: uppercase;
 font-family : 'American Captain', Impact, "Arial Black", Arial, Verdana, sans-serif;
 }
-.banniere {
-width : 100%;
-height : 354px;
-margin-bottom : 10px;
+.banniere li {
+    display: inline;      /* on aligne les éléments du slideshow */
 }
-.banniere img {
+.posetaq {
+position : relative;
+overflow : hidden;
+display : inline-block;
+background-image : url('/yourchoice/images/posetaq.png');
+width : 461px;
+height: 354px;
 margin : 0px;
 box-shadow: 5px 5px 5px black;
 border-radius : 5px;
 }
-.banniere a :hover {
-opacity : 0.8;
-margin-bottom : -10px;
+#posetaq {
+    position: absolute;   /* on sort l'élément du flux */
+    top: 0;               /* on le positionne précisément dans... */
+    left: 0;              /* l'angle haut gauche de son parent positionné */
+    margin: 0;            
+    padding: 0;
+    width: 922px;          /* ou 200% (car deux éléments) */
+    height : 354px;
+    /* CSS3 Transition */
+	-webkit-transition: left 1s;
+	-moz-transition: left 1s;
+	-o-transition: left 1s;
+	transition: left 1s;
+}
+a:hover #posetaq {
+    left: -461px;         /* ou - 100% */
+}
+.questionprep {
+position : relative;
+overflow : hidden;
+display : inline-block;
+background-image : url('/yourchoice/images/questionprep.png');
+width : 573px;
+height: 354px;
+margin : 0px;
+box-shadow: 5px 5px 5px black;
+border-radius : 5px;
+}
+#questionprep {
+    position: absolute;   /* on sort l'élément du flux */
+    top: 0;               /* on le positionne précisément dans... */
+    left: 0;              /* l'angle haut gauche de son parent positionné */
+    margin: 0;            
+    padding: 0;
+    width: 1146px;          /* ou 200% (car deux éléments) */
+    height : 354px;
+    /* CSS3 Transition */
+	-webkit-transition: left 1s;
+	-moz-transition: left 1s;
+	-o-transition: left 1s;
+	transition: left 1s;
+}
+a:hover #questionprep {
+    left: -573px;         /* ou - 100% */
+}
+.questionsexe {
+position : relative;
+overflow : hidden;
+display : inline-block;
+background-image : url('/yourchoice/images/questionsexe.png');
+width : 280px;
+height: 354px;
+margin : 0px;
+box-shadow: 5px 5px 5px black;
+border-radius : 5px;
+}
+#questionsexe {
+    position: absolute;   /* on sort l'élément du flux */
+    top: 0;               /* on le positionne précisément dans... */
+    left: 0;              /* l'angle haut gauche de son parent positionné */
+    margin: 0;            
+    padding: 0;
+    width: 560px;          /* ou 200% (car deux éléments) */
+    height : 354px;
+    /* CSS3 Transition */
+	-webkit-transition: left 0.5s;
+	-moz-transition: left 0.5s;
+	-o-transition: left 0.5s;
+	transition: left 0.5s;
+}
+a:hover #questionsexe {
+    left: -280px;         /* ou - 100% */
 }
 .presentation h2 {
 font-size : 2em;

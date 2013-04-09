@@ -2,9 +2,30 @@
 entete("Accueil");
 ?>
 <div class="banniere">
-<a href="/yourchoice/Question"><img src="/yourchoice/images/posetaq.jpg" /></a>
-<a href="/yourchoice/Prepose"><img src="/yourchoice/images/questionprep.jpg" /></a>
-<a href="/yourchoice/Sexe"><img src="/yourchoice/images/questionsexe.jpg" /></a>
+	<a href="/yourchoice/Question">
+	<div class="posetaq">
+		<ul id="posetaq"><!--
+			--><li><img src="/yourchoice/images/transparentposetaq.png" /></li><!--
+			--><li><img src="/yourchoice/images/posetaqslide.png" /></li><!--
+		--><ul>
+	</div>
+	</a>
+	<a href="/yourchoice/Prepose">
+	<div class="questionprep">
+		<ul id="questionprep"><!--
+			--><li><img src="/yourchoice/images/transparentquestionprep.png" /></li><!--
+			--><li><img src="/yourchoice/images/questionprepslide.png" /></li><!--
+		--><ul>
+	</div>
+	</a>
+	<a href="/yourchoice/Sexe">
+	<div class="questionsexe">
+		<ul id="questionsexe"><!--
+			--><li><img src="/yourchoice/images/transparentquestionsexe.png" /></li><!--
+			--><li><img src="/yourchoice/images/questionsexeslide.png" /></li><!--
+		--><ul>
+	</div>
+	</a>
 </div>
 <div class="corp">
 	<div class="presentation">
