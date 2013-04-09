@@ -87,7 +87,7 @@ background-color : #FEC158;
 border-radius : 5px;
 min-height : 150px;
 padding : 15px;
-margin-top : 15px;
+margin-top : 5px;
 }
 /* Definition du bloc de bas de page (hauteur min fixe)
  * Inclusion d'une marge intérieure + bord rond + couleur spéciale + marge en haut
@@ -134,15 +134,12 @@ font-family : 'American Captain', Impact, "Arial Black", Arial, Verdana, sans-se
 .banniere {
 width : 100%;
 height : 354px;
-margin : auto;
+margin-bottom : 10px;
 }
 .banniere img {
 margin : 0px;
 box-shadow: 5px 5px 5px black;
 border-radius : 5px;
-}
-.banniere a {
-diplay : inline-block;
 }
 .banniere a :hover {
 opacity : 0.8;

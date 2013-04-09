@@ -2,9 +2,9 @@
 entete("Accueil");
 ?>
 <div class="banniere">
-<a href="/yourchoice"><img src="/yourchoice/images/Interrogation.jpg" /></a>
-<a href="/yourchoice"><img src="/yourchoice/images/interro.jpg" /></a>
-<a href="/yourchoice"><img src="/yourchoice/images/interrogatoire.jpg" /></a>
+<a href="/yourchoice/Question"><img src="/yourchoice/images/posetaq.jpg" /></a>
+<a href="/yourchoice/Prepose"><img src="/yourchoice/images/questionprep.jpg" /></a>
+<a href="/yourchoice/Sexe"><img src="/yourchoice/images/questionsexe.jpg" /></a>
 </div>
 <div class="corp">
 	<div class="presentation">

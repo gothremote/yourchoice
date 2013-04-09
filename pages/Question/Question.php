@@ -1,6 +1,7 @@
 <?php 
 entete('Poses ta question');
 ?>
+<div class="corp">
 <form action="Question/choix" method="POST">
 <center><label class="question" for="question">Question : </label><input type="text" class="question" id="question" name="question"></center>
 </br>
@@ -14,6 +15,7 @@ entete('Poses ta question');
 </table>
 <input type="submit" value="décision" >
 <INPUT type="reset" value="effacer">
+</div>
 <?php 
 basdepage();
 ?>
