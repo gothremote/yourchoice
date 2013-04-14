@@ -2,6 +2,10 @@
     font-family: 'ChemyRetro_v01';
     src: url('ChemyRetro_v01.ttf') format('truetype');
 }
+@font-face { /* Définition d'une nouvelle police nommée actionj */
+    font-family: 'actionj';
+    src: url('BradBunR.ttf') format('truetype');
+}
 @font-face { /* Définition d'une nouvelle police nommée American Captain */
     font-family: 'American Captain';
     src: url('American Captain.ttf') format('truetype');
@@ -9,73 +13,60 @@
 /* Définition de la couleur de fond */
 body {
 background-color : #FEA41E;
-padding : 0px 5px 5px 5px;
+min-width : 1080px;
+margin : 0px;
+padding-top : 55px;
 }
 /* Definition du bloc d'entête (hauteur et largeur)
  * position relative pour pouvoir aligner les image par la suite*/
 .header {
-position : relative;
-display: inline-block;
-height : 130px;
+position : fixed;
+top : 0px;
+background-color : #232424;
+min-width : 1060px;
+height : 50px;
+display : block;
 width : 100%;
-}
-/* Définition de la police de titre
- * Transformation du texte en majuscule, gras et alignement au centre*/
-.header h1{
-text-align : center;
-font-size : 4em;
-font-height : bold;
-text-transform: uppercase;
-color : white;
-font-family : 'American Captain', Impact, "Arial Black", Arial, Verdana, sans-serif;
-text-shadow: 1px 1px 2px black;
-}
-/* Image ne dépassant pas de leur "bloc" avec height : 100%*/
-img {
-height: 100%;
-}
-/* Alignement de l'image a gauche en bas par rapport au "bloc" header grace à position absolue*/
-.gauche {
-position : absolute;
-left : 0px;
-bottom : 0px;
-}
-/* Alignement de l'image a droite en bas par rapport au "bloc" header grace à position absolue*/
-.droite {
-position : absolute;
-right : 0px;
-bottom : 0px;
-}
-/* Définition du bloc menu (arriere plan et bord rond)
- * Définition de sa largeur + espacement par rapport au texte en dessous*/
-.menu {
-display : inline-block;
-background-color: #1A1D1D;
-border-radius: 5px;
-width:100%;
-margin-bottom : 10px;
+z-index : 4;
 }
 /* Définition de la police du menu(taille, gras, police)
  * Suppression des puces + espacement à droite*/
-.menu li {
+.header ul {
+text-align : center;
+}
+.header li {
 display : inline-block;
 list-style : none;
-font-family : fantasy;
-font-size : 2 em;
+}
+.header .accueil {
+border-left: 1px solid rgb(0, 0, 0);
+border-right: 1px solid rgb(51, 51, 51);
+box-shadow: -1px 0px rgb(0, 0, 0) inset, 1px 0px rgb(51, 51, 51) inset;
+font-family : actionj;
+color : white; 
+font-size : 1em; 
 font-weight : bold;
 }
 /* Suppression des soulignée + couleur des lien*/
-.menu li a {
-padding: .6em 1.1em;
+.header li a {
+padding: .8em 1.1em;
 color : white;
-background-color : #999A9A;
 text-decoration : none;
-border-radius : 5px;
+border-right: 1px solid rgb(51, 51, 51);
+box-shadow: -1px 0px rgb(0, 0, 0) inset;
+font-family : fantasy;
+font-size : 2 em;
+font-weight : bold;
+/* Transition powaa*/
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	transition: background-color 1s;
 }
 /* Suppression des soulignée + couleur des lien "hover"*/
-.menu li a:hover {
+.header li a:hover {
 color : white;
-background-color : #cccccc;
+background-color : #5E6564;
 text-decoration : none;
 }
 /* Definition du bloc de corp (hauteur min fixe)
@@ -135,8 +126,12 @@ font-height : bold;
 text-transform: uppercase;
 font-family : 'American Captain', Impact, "Arial Black", Arial, Verdana, sans-serif;
 }
+.banniere {
+text-align : center;
+z-index : 2;
+}
 .banniere li {
-    display: inline;      /* on aligne les éléments du slideshow */
+display: inline;      /* on aligne les éléments du slideshow */
 }
 .posetaq {
 position : relative;
