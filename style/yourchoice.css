@@ -10,12 +10,31 @@
     font-family: 'American Captain';
     src: url('American Captain.ttf') format('truetype');
 }
-/* Définition de la couleur de fond */
+html{
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
 body {
-background-color : #FEA41E;
+height: 100%;
+margin: 0;
+padding: 0;
+}
+#superglobale{
+position : relative;
+min-height: 100%;
+background-color : #CCCED0;
 min-width : 1080px;
 margin : 0px;
+}
+/* Définition de la couleur de fond */
+#globale {
+position : relative;
+min-height : 100%;
+margin : 0 auto;
 padding-top : 55px;
+padding-bottom : 90px;
 }
 /* Definition du bloc d'entête (hauteur et largeur)
  * position relative pour pouvoir aligner les image par la suite*/
@@ -28,11 +47,19 @@ height : 50px;
 display : block;
 width : 100%;
 z-index : 4;
+border-bottom : 1px solid rgb(51, 51, 51);
+box-shadow : 0px -1px rgb(0, 0, 0) inset, 0px 2px 1px grey;
 }
 /* Définition de la police du menu(taille, gras, police)
  * Suppression des puces + espacement à droite*/
 .header ul {
 text-align : center;
+}
+.header h1 {
+display : inline-block;
+text-align : left;
+font-family : actionj;
+font-size : 1.5em;
 }
 .header li {
 display : inline-block;
@@ -42,7 +69,7 @@ list-style : none;
 border-left: 1px solid rgb(0, 0, 0);
 border-right: 1px solid rgb(51, 51, 51);
 box-shadow: -1px 0px rgb(0, 0, 0) inset, 1px 0px rgb(51, 51, 51) inset;
-font-family : actionj;
+font-family : fantasy;
 color : white; 
 font-size : 1em; 
 font-weight : bold;
@@ -57,11 +84,12 @@ box-shadow: -1px 0px rgb(0, 0, 0) inset;
 font-family : fantasy;
 font-size : 2 em;
 font-weight : bold;
+
 /* Transition powaa*/
-	-webkit-transition: background-color 1s;
-	-moz-transition: background-color 1s;
-	-o-transition: background-color 1s;
-	transition: background-color 1s;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
 }
 /* Suppression des soulignée + couleur des lien "hover"*/
 .header li a:hover {
@@ -73,38 +101,27 @@ text-decoration : none;
  * Inclusion d'une marge intérieure + bord rond + couleur spéciale
  * Obligation d'utiliser box-sizing pour pas que ca dépasse*/
 .corp {
-display : inline-block;
-width : 100%;
--webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;         /* Opera/IE 8+ */
-background-color : #FEC158;
+display : block;
+width : 980px;
+margin : 10px auto;
+background-color : #FFFFFF;
 border-radius : 5px;
-min-height : 150px;
+border : 1px solid #919395;
 padding : 15px;
-margin-top : 5px;
+box-shadow: 2px 2px 5px black;
 }
 /* Definition du bloc de bas de page (hauteur min fixe)
  * Inclusion d'une marge intérieure + bord rond + couleur spéciale + marge en haut
  * Obligation d'utiliser box-sizing pour pas que ca dépasse*/
 #footer {
-position : relative;
-display : inline-block;
-width : 100%;
--webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;         /* Opera/IE 8+ */
-background-color : #FEC158;
-border-radius : 5px;
-min-height : 50px;
-padding : 15px;
-margin-top : 10px;
+position : absolute;
+bottom : 0px;
+background-color : #232424;
+min-width : 1080px;
+padding : 10px 30px 10px 30px;
 }
-/* Definition du bas de page */
 #footer p {
-display :inline-block;
-margin-right : 5%;
-margin-left : 5%;
+color : white;
 }
 /* Definition espacement de chaque ligne du tableau */
 #tableau tr {
@@ -129,6 +146,7 @@ font-family : 'American Captain', Impact, "Arial Black", Arial, Verdana, sans-se
 .banniere {
 text-align : center;
 z-index : 2;
+margin-top : 5px;
 }
 .banniere li {
 display: inline;      /* on aligne les éléments du slideshow */

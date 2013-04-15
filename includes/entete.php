@@ -7,9 +7,12 @@
 	<?php echo $additional_headers; ?>
 </head>
 <body>
+<div id="superglobale">
+<div id="globale">
 	<div class="header">
+               <!-- <h1> Yourchoice </h1> -->
         <ul>
-                <li><a class="accueil" href="/yourchoice" > Yourchoice </a></li><!--
+                <li><a class="accueil" href="/yourchoice" > Acceuil </a></li><!--
 		--><li><a href="/yourchoice/Question" > Poses-ta question </a></li><!--
 		--><li><a href="/yourchoice/Improbable" >Questions improbables </a></li><!--
 		--><li><a href="/yourchoice/Sexe" >Questions sexuelles</a></li>
