@@ -14,6 +14,11 @@ function entete($titre, $page) {
 function basdepage($page) {
   require('includes/basdepage.php');
 }
+function ec($c) {
+  global $page;
+  if ($c === $page)
+    echo 'id="current"';
+}
 ?>
 
 
