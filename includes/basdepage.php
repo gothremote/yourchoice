@@ -1,3 +1,4 @@
+    <?php if ($page !== 'index') echo '</div>';?>
     </div>
     <div id="footer">
         <p>Ceci n'est pas un message de pub qui vise à te faire aller sur des 

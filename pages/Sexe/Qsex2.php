@@ -1,10 +1,10 @@
 <?php 
-entete('Question Houlaop');
+entete('Question Houlaop', $page);
 $choix=$_POST['choix'];
 ?>
 
 Bonjour
 
 <?php 
-basdepage();
+basdepage($page);
 ?>

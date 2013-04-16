@@ -1,9 +1,9 @@
 <?php 
-entete('Question Improbable');
+entete('Question Improbable', $page);
 ?>
 
 Coucou
 
 <?php 
-basdepage();
+basdepage($page);
 ?>

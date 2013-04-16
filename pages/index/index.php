@@ -1,5 +1,5 @@
 <?php 
-entete("Accueil");
+entete('Accueil', $page);
 ?>
 <div class="banniere">
 	<a href="/yourchoice/Question">
@@ -48,5 +48,5 @@ entete("Accueil");
 	</div>
 </div>
 <?php 
-basdepage();
+basdepage($page);
 ?>

@@ -1,5 +1,5 @@
 <?php 
-entete('Question Hot');
+entete('Question Hot', $page);
 ?>
 
 Choisis ton type de questions : <br> <br>
@@ -23,6 +23,6 @@ Choisis ton type de questions : <br> <br>
 <input type="submit" value="choix" >
 
 <?php 
-basdepage();
+basdepage($page);
 ?>
 

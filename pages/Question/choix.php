@@ -1,5 +1,5 @@
 <?php
-entete('Reponse');
+entete('Reponse',$page);
 ?>
 <?php
 
@@ -88,5 +88,5 @@ else
 mysql_close($link);
 ?>
 <?php
-basdepage();
+basdepage($page);
 ?>

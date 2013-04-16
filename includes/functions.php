@@ -6,14 +6,15 @@ function add_header($header) {
   $additional_headers .= "$header\n";
 }
 
-function entete($titre) {
+function entete($titre, $page) {
 	global $additional_headers;
   require('includes/entete.php');
 }
 
-function basdepage() {
+function basdepage($page) {
   require('includes/basdepage.php');
 }
+?>
 
 
 
