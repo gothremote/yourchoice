@@ -13,7 +13,7 @@
 	<div class="header">
                <!-- <h1> Yourchoice </h1> -->
         <ul>
-                <li><a <?php if ($page === 'index') echo 'id="current"';?> class="accueil" href="/yourchoice" > Acceuil </a></li><!--
+                <li><a <?php if ($page === 'index') echo 'id="current"';?> class="accueil" href="/yourchoice" > Accueil </a></li><!--
 		--><li><a <?php if ($page === 'Question') echo 'id="current"';?> href="/yourchoice/Question" > Poses-ta question </a></li><!--
 		--><li><a <?php if ($page === 'Improbable') echo 'id="current"';?> href="/yourchoice/Improbable" >Questions improbables </a></li><!--
 		--><li><a <?php if ($page === 'Sexe') echo 'id="current"';?> href="/yourchoice/Sexe" >Questions sexuelles</a></li>
